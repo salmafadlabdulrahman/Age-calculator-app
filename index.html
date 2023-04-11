@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="date-fields">
+
+        <div class="dates-container">
+          <label for="day" class="day-label label">Day</label>
+          <input type="number" placeholder="DD" class="dayInput input day" />
+          <p class="text1 requiredField"></p>
+        </div>
+
+        <div class="dates-container">
+          <label for="month" class="month-label label">Month</label>
+          <input type="number" placeholder="MM" class="monthInput input month" />
+          <p class="text2 requiredField"></p>
+        </div>
+
+        <div class="dates-container">
+          <label for="year" class="year-label label">Year</label>
+          <input type="number" placeholder="YYYY" class="yearInput input year" />
+          <p class="text3 requiredField"></p>
+         </div>
+
+          <img
+            src="./assets/images/icon-arrow.svg"
+            alt="white-arrow"
+            class="img"
+          />
+      </div>
+
+      <div class="age-fields">
+        <p class="age"><span class="year-span">--</span> years</p>
+        <p class="age"><span class="month-span">--</span> months</p>
+        <p class="age"><span class="day-span">--</span> days</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>

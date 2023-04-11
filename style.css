@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: hsl(0, 0%, 94%);
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background: hsl(0, 0%, 100%);
+  margin-top: 6rem;
+  padding: 3rem;
+  border-radius: 15px;
+  border-bottom-right-radius: 150px;
+}
+
+.date-fields {
+  display: flex;
+  padding-bottom: 4em;
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+  margin-bottom: 2em;
+}
+
+.date-fields:last-child {
+  border: 0;
+  padding: 0;
+}
+
+.img {
+  background: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 1rem;
+  position: absolute;
+  top: 35%;
+  left: 67%;
+}
+
+
+.img:hover {
+  background: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  color: hsl(0, 1%, 44%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  padding-bottom: 0.3rem;
+}
+
+input {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  width: 70%;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 7px;
+  text-align: center;
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+  font-size: 32px;
+}
+
+input[type=text]:focus {
+  outline-color: hsl(259, 100%, 65%); 
+  caret-color: hsl(259, 100%, 65%);
+}
+
+::placeholder {
+  text-align: left;
+  font-weight: 800;
+  font-size: 1.3rem;
+  padding-left: 0.8rem;
+  padding-bottom: 0.9rem;
+  color: hsl(0, 1%, 44%);
+  font-family: "Poppins", sans-serif;
+}
+
+.age-fields {
+  padding-top: 1.5rem;
+  padding-left: 0rem;
+  margin-top: 1.5rem;
+}
+
+.age {
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.1;
+  color: hsl(0, 0%, 8%);
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+}
+
+.error-message-date, .error-message, .requiredField {
+    color: hsl(0, 100%, 67%);
+    font-size: 13px;
+    font-style: italic;
+    margin-top: .5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 972px) {
+  body {
+    width: 90vw;
+    height: 75vh;
+  }
+  input {
+    width: 90%;
+  }
+  .age {
+    font-size: 2.8rem;
+  }
+  .img {
+    top: 32%;
+    left: 46%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 459px) {
+  input {
+    width: 90%;
+    font-size: 20px;
+  }
+  .img {
+    top: 32%;
+    left: 40%;
+  }
+  .age {
+    font-size: 2.5rem;
+  }
+}
